@@ -77,13 +77,19 @@ $ ./console.py
 (hbnb) EOF
 $
 Console Commands
+
+
 The AirBnB console supports the following commands:
 
 create
+
+
 Usage: create <class>
 Creates a new instance of a given class. The class' ID is printed and the instance is saved to the file file.json.
 
 show
+
+
 Usage: show <class> <id> or <class>.show(<id>)
 Prints the string representation of a class instance based on a given id.
 
@@ -94,7 +100,13 @@ $ ./console.py
 (hbnb) 
 (hbnb) User.show(uid)
 (hbnb) 
+
+
+
 destroy
+
+
+
 Usage: destroy <class> <id> or <class>.destroy(<id>)
 Deletes a class instance based on a given id. The storage file file.json is updated accordingly.
 
@@ -122,7 +134,12 @@ $ ./console.py
 (hbnb) User.all()
 (hbnb) 
 (hbnb) all
+
+
+
 count
+
+
 Usage: count <class> or <class>.count()
 Retrieves the number of instances of a given class.
 
@@ -136,7 +153,12 @@ $ ./console.py
 (hbnb) city.count()
 1
 (hbnb) 
+
+
+
 update
+
+
 Usage: update <class> <id> <attribute name> "<attribute value>" or <class>.update(<id>, <attribute name>, <attribute value>) or <class>.update( <id>, <attribute dictionary>).
 Updates a class instance based on a given id with a given key/value attribute pair or dictionary of attribute pairs. If update is called with a single key/value attribute pair, only "simple" attributes can be updated (ie. not id, created_at, and updated_at). However, any attribute can be updated by providing a dictionary.
 
@@ -151,8 +173,15 @@ $ ./console.py
 (hbnb)
 (hbnb) User.update(uid, {'email': 'email', 'last_name': 'last_name'})
 (hbnb) 
+
+
+
 Testing 📏
+
+
 Unittests for the Airbnb_clone project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
+
+
 
 $ python3 unittest -m discover tests
 Alternatively, you can specify a single test file to run at a time:
